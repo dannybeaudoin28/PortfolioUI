@@ -24,11 +24,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>test</td>
-                <td>t</td>
-                <td>t</td>
-                <td>t</td>
+            <tr *ngFor="let course of courses">
+                <td>{{ course.name }}</td>
+                <td>{{ course.desc }}</td>
+                <td>{{ course.grade }}</td>
+                <td>{{ course.year }}</td>
             </tr>
         </tbody>
     </table>

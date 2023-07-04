@@ -8,6 +8,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutMeComponent } from './Components/about-me/about-me.component';
 import { GradesComponent } from './Components/grades/grades.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GradesComponent } from './Components/grades/grades.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   exports: [
     HeaderComponent,

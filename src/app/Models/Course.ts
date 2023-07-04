@@ -1,6 +1,7 @@
 export class Course {
-    id?: number;
-    courseName?: string;
-    finalGrade?: number;
-    desc?: string;
+    id !: number;
+    name !: string;
+    grade !: number;
+    desc!: string;
+    year!: number;
 }
