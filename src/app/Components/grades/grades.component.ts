@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Course } from 'src/app/Models/Course';
 import { GradesService } from 'src/app/Services/grades.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-grades',
   templateUrl: './grades.component.html',
   styleUrls: ['./grades.component.scss'],
 })
 export class GradesComponent implements OnInit {
-  constructor(private gradesService: GradesService) { }
+  constructor(private gradesService: GradesService, private router: Router) { }
 
   ngOnInit(): void {
     this.getCourses();
@@ -62,6 +62,10 @@ export class GradesComponent implements OnInit {
       this.courses.sort((a, b) => (a.desc < b.desc ? -1 : 1));
     }
     this.sortDescAsc = !this.sortDescAsc;
+  }
+
+  protected viewCourse(courseId: number): void {
+    this.router.navigate(['/course', courseId])
   }
 
   //TODO: Add Search functionality to search courses by identifier
