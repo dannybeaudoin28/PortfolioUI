@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./grades.component.scss']
 })
 export class GradesComponent {
-
+  gpa: number = 3.63
 }
