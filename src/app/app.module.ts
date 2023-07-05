@@ -10,6 +10,7 @@ import { AboutMeComponent } from './Components/about-me/about-me.component';
 import { GradesComponent } from './Components/grades/grades.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CourseComponent } from './Components/course/course.component';
+import { ContactMeComponent } from './Components/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CourseComponent } from './Components/course/course.component';
     AboutMeComponent,
     GradesComponent,
     CourseComponent,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,
