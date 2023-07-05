@@ -22,12 +22,10 @@ export class GradesComponent implements OnInit {
 
   private getCourses(): void {
     this.gradesService.getAllCourses().subscribe(response => {
-      // console.log(response)
       this.courses = response;
     });
   }
 
-  //TODO: Add flags, and logic for sorting by description, grade, and year of study
   protected sortByName(): void {
     if (this.sortNameAsc === true) {
       this.courses.sort((a, b) => (a.name > b.name ? -1 : 1));
@@ -69,5 +67,4 @@ export class GradesComponent implements OnInit {
   }
 
   //TODO: Add Search functionality to search courses by identifier
-  //TODO: Make each course clickable
 }
