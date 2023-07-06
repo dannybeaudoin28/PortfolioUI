@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { GradesService } from 'src/app/Services/grades.service';
 import { Router } from '@angular/router';
 @Component({
@@ -13,6 +13,8 @@ export class GradesComponent implements OnInit {
     this.getCourses();
   }
 
+  @Input() receivedValue?: string;
+
   gpa: number = 3.63;
   courses: any[] = [];
   sortNameAsc: boolean = true;
@@ -25,6 +27,12 @@ export class GradesComponent implements OnInit {
       this.courses = response;
     });
   }
+
+  // private searchCourses(): void {
+  //   this.gradesService.getCourseByQuery().subscribe(response => {
+  //     this.courses = response;
+  //   });
+  // }
 
   protected sortByName(): void {
     if (this.sortNameAsc === true) {

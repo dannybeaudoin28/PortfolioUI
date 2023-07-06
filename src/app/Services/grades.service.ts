@@ -16,4 +16,6 @@ export class GradesService {
   getAllCourses(): Observable<Course[]> {
     return this.http.get<Course[]>('http://127.0.0.1:8888/getAllCourses');
   }
+
+  //test
 }
