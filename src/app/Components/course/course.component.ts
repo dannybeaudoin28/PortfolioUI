@@ -24,7 +24,7 @@ export class CourseComponent implements OnInit {
   getCourseById(id : string) {
     this.gradesService.getCourseById(id).subscribe(response => {
       this.course = response;
-      // console.log(this.course);
+      // console.log(this.course);asdf
     });
   }
 
