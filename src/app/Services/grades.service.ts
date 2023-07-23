@@ -8,13 +8,13 @@ import { Observable } from 'rxjs';
 })
 export class GradesService {
   getCourseById(id: string): Observable<Course> {
-    return this.http.get<Course>('http://127.0.0.1:8888/getCourse/' + id);
+    return this.http.get<Course>('http://34.201.134.147:8888/getCourse/' + id);
   }
 
   constructor(private http: HttpClient) { }
 
   getAllCourses(): Observable<Course[]> {
-    return this.http.get<Course[]>('http://127.0.0.1:8888/getAllCourses');
+    return this.http.get<Course[]>('http://34.201.134.147:8888/getAllCourses');
   }
 
   //test sdfasdfasdf
