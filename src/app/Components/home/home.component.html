@@ -7,3 +7,8 @@
         class="mb-3 text-4xl font-extrabold leading-none tracking-tight text-gray-100 md:text-5xl lg:text-6xl dark:text-black mx-12">
         What have I worked on?</h2>
 </div>
+<p> </p>
+<div *ngIf="projects.length > 0">
+    
+    <app-project *ngFor="let proj of projects" [proj]="proj"></app-project>
+</div>

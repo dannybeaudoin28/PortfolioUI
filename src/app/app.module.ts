@@ -11,6 +11,7 @@ import { GradesComponent } from './Components/grades/grades.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CourseComponent } from './Components/course/course.component';
 import { ContactMeComponent } from './Components/contact-me/contact-me.component';
+import { ProjectComponent } from './Components/project/project.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ContactMeComponent } from './Components/contact-me/contact-me.component
     GradesComponent,
     CourseComponent,
     ContactMeComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,

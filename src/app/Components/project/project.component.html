@@ -1,0 +1,12 @@
+<div *ngIf="proj" class="project-view">
+    <h2>{{proj.name | uppercase}} Details</h2>
+    <div><span>Description: </span>{{proj.description}}</div>
+    <div *ngIf="hasImage">
+        <img src={{proj.image}} alt="project-img">
+    </div>
+    <div *ngIf="hasLink">
+        <img src={{proj.link}} alt="project-link">
+        <a href={{proj.link}}>{{proj.name}} link</a>
+    </div>
+    <hr>
+  </div>
