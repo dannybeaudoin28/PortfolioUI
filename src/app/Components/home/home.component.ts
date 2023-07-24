@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   protected project : project = {
     id: 1,
     name: 'Test Project',
-    description: 'This is my first test subject in this component',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus tristique nulla at pellentesque. Phasellus at dolor leo. Nulla auctor nisl in leo imperdiet dictum. Aenean ultricies, dui nec feugiat porttitor, nisi velit iaculis sem, vel condimentum dolor nibh sit amet quam. Pellentesque venenatis sodales lacus at venenatis. Proin tincidunt ipsum nec mi rhoncus, at lacinia lorem dignissim. Suspendisse laoreet mi nec ex pharetra, non tincidunt lacus consequat. Curabitur mollis neque euismod, cursus massa rhoncus, posuere purus. Ut felis tellus, mollis eget ultrices vel, fringilla ut purus. Curabitur in pretium dolor. Etiam congue neque libero, et cursus nisi eleifend vel.',
     image: "null",
     link: 'https://google.ca'
   }
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   protected project2 : project = {
     id: 2,
     name: 'Test Project 1',
-    description: 'This is my second test subject in this component',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus tristique nulla at pellentesque. Phasellus at dolor leo. Nulla auctor nisl in leo imperdiet dictum. Aenean ultricies, dui nec feugiat porttitor, nisi velit iaculis sem, vel condimentum dolor nibh sit amet quam. Pellentesque venenatis sodales lacus at venenatis. Proin tincidunt ipsum nec mi rhoncus, at lacinia lorem dignissim. Suspendisse laoreet mi nec ex pharetra, non tincidunt lacus consequat. Curabitur mollis neque euismod, cursus massa rhoncus, posuere purus. Ut felis tellus, mollis eget ultrices vel, fringilla ut purus. Curabitur in pretium dolor. Etiam congue neque libero, et cursus nisi eleifend vel.',
     image: "null",
     link: 'https://google.ca'
   }
@@ -28,6 +28,7 @@ export class HomeComponent implements OnInit {
     this.projects.push(this.project);
     this.projects.push(this.project2);
     console.log('number of projects: ', this.projects.length)
+    console.log(this.project2.link)
   }
 
 

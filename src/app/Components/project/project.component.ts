@@ -16,9 +16,9 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
     console.log('inside project component')
     if (this.proj != null) {
-      console.log('Project: ', this.proj);
+      console.log('Project: ', this.proj.link);
       if (this.proj.image != null) this.hasImage = !this.hasImage;
-      else if (this.proj.link != null) this.hasLink = !this.hasLink;
+      if (this.proj.link != null) this.hasLink = !this.hasLink;
     }
   }
 

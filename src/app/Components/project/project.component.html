@@ -1,12 +1,11 @@
 <div *ngIf="proj" class="project-view">
-    <h2>{{proj.name | uppercase}} Details</h2>
-    <div><span>Description: </span>{{proj.description}}</div>
-    <div *ngIf="hasImage">
-        <img src={{proj.image}} alt="project-img">
+    <h1 class="mb-3 text-4xl font-extrabold leading-none tracking-tight text-gray-100 md:text-5xl lg:text-6xl dark:text-black mx-12">{{proj.name | uppercase}} DETAILS</h1>
+    <div class="project-properties"><span>Description: </span>{{proj.description}}</div>
+    <div *ngIf="hasImage" class="project-properties">
+        <img class="project-img border-4 border-orange-500"  src="/assets/images/image_6483441.jpg" alt="project-img">
     </div>
-    <div *ngIf="hasLink">
-        <img src={{proj.link}} alt="project-link">
-        <a href={{proj.link}}>{{proj.name}} link</a>
+    <div *ngIf="hasLink"  class="project-properties">
+        <p class="mb-3 text-lg text-gray-500 md:text-xl dark:text-gray-400 intro-p"><a routerLink="{{proj.link}}">Link to App: {{proj.link}}</a></p>
     </div>
-    <hr>
+    <br>
   </div>
